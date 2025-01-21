@@ -15,7 +15,9 @@ def ping():
 def aboutus():
     return "<p>We are Mlops learners</p>"
 
-model_pickle = open(r"C:\Users\sudha\PycharmProjects\PythonProject\Flask_jan\classifier.pkl", "rb")
+model_pickle = open("classifier.pkl", "rb")
+# In the terminal we should be at that path where .pkl file is present then we can pass classifier.pkl as above otherwise we've to give full path
+# In terminal we can use "cd path" to go to specific path
 clf = pickle.load(model_pickle)
 
 # defining the endpoint which will make the prediction
