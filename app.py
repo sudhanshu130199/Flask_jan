@@ -52,4 +52,4 @@ def prediction():
 
 
 # flask --app Flask_jan/app.py run
-# to run flask application
+# to run flask application on terminal
